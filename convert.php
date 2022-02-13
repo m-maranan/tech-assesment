@@ -1,7 +1,7 @@
 <?php
 session_start();
-include('User.php');
-include('Converter.php');
+include('Classes/User.php');
+include('Classes/Converter.php');
 
 if(isset($_POST['change_user']) && $_POST['change_user'] == true) {
     $_SESSION['user'] = null;
